@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" id="html-element">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LaPlateforme</h1>
+    <form method="post" id="form-add-student">
+        <input name="mail" id="student-mail" type="email" placeholder="email..." required>
+        <input name="fullname" id="student-fullname" type="text" placeholder="fullname..." required>
+        <select id="student-gender" name="gender" id="">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <select id="student-grade" name="grade" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <input name="birthday" id="student-birthday" type="date" required>
+        <input id="submit-btn" type="submit" value="Envoyer">
+    </form>
+    <p id="isSubmit"></p>
+</body>
+<script src="script.js"></script>
+</html>
