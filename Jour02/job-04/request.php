@@ -16,7 +16,7 @@
         }
     }
 
-    function addUserToDatabase(int $grade_id, string $email, string $fullname, DateTime $birthdate, string $gender) : bool {
+    function my_insert_student(int $grade_id, string $email, string $fullname, DateTime $birthdate, string $gender) : bool {
         try {
             $db = ConnexionDataBase();
             if($db === null){
@@ -34,7 +34,7 @@
 
     if($_SERVER["REQUEST_METHOD"] === "POST"){
         $birthdate = DateTime::createFromFormat('Y-m-d', $_POST['birthday']);
-        $res = addUserToDatabase($_POST['grade'],$_POST['mail'],$_POST['fullname'],$birthdate,$_POST['gender']);
+        $res = my_insert_student($_POST['grade'],$_POST['mail'],$_POST['fullname'],$birthdate,$_POST['gender']);
         if($res){
             $send = ["msg" => "requete envoyé ! :)"];
         } else {
