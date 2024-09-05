@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" id="html-element">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <h1>LaPlateforme</h1>
+    <form method="GET" id="form-search-student">
+        <input name="mail" id="mail-search-student" type="email" placeholder="email..." required>
+        <input id="submit-btn" type="submit" value="Envoyer">
+    </form>
+    <table>
+        <thead>
+            <tr>
+               <th>ID</th> 
+               <th>Grade</th> 
+               <th>Email</th> 
+               <th>Fullname</th> 
+               <th>Gender</th>
+               <th>Birthdate</th> 
+            </tr>
+        </thead>
+        <tbody id="tbod">
+
+        </tbody>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
